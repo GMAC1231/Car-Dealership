@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <title>Contact Us</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%; padding: 2%;">
+    <h1>Contact Us</h1>
+    <p>If you have any questions or need further assistance, please reach out to us using the form below or contact one of our team members directly.</p>
+
+    <form method="post" action="/contact/submit">
+      <div class="mb-3">
+        <label for="name" class="form-label">Your Name</label>
+        <input type="text" class="form-control" id="name" name="name" placeholder="Your full name">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Your Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="your@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Your Message</label>
+        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Send Message</button>
+    </form>
+
+    <hr>
+
+    <div style="display: flex; flex-direction: row; gap: 2%; justify-content: center; margin-top: 2%;">
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/person.png" alt="Person 1">
+        <div class="card-body">
+          <p class="title">Person1</p>
+          <p>Sales Manager</p>
+          <p class="card-text">For inquiries about available cars and pricing.</p>
+          <p><strong>Email:</strong> person1@example.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/person.png" alt="Person 2">
+        <div class="card-body">
+          <p class="title">Person2</p>
+          <p>Customer Support</p>
+          <p class="card-text">Reach out for support, feedback, or complaints.</p>
+          <p><strong>Email:</strong> person2@example.com</p>
+        </div>
+      </div>
+
+      <div class="card" style="width: 30%;">
+        <img class="card-img-top" src="/static/person.png" alt="Person 3">
+        <div class="card-body">
+          <p class="title">Person3</p>
+          <p>Finance Consultant</p>
+          <p class="card-text">Need help with car loans or financing?</p>
+          <p><strong>Email:</strong> person3@example.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
